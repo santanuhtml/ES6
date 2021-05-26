@@ -1,0 +1,56 @@
+====================
+1.let & const:
+====================
+let & const are two keywords used most of the time in React.
+they use to creat variables in Javascript. variable denote with 'var'.
+
+Now there has two type of variables('var')
+    let = it is basic variable where data is changable
+    const = here it has constant value
+
+Here to create new variable we will always use 'let' or 'const' in 
+place of 'var'
+
+Examples:
+I. CODE
+
+var myName = 'Max';
+console.log(myName);
+
+myName = 'Manu';
+console.log('myname');
+
+----------
+Output
+
+Max
+Manu
+-----------
+
+II. CODE
+
+let myName = 'Max';
+console.log(myName);
+
+myName = 'Manu';
+console.log('myname');
+
+----------
+Output
+
+Max
+Manu
+-----------
+
+III. CODE
+
+const myName = 'Max';
+console.log(myName);
+
+myName = 'Manu';
+console.log('myname');
+
+----------
+Output
+
+Error message will dilplay because we try to 'Re-assign a constant variable!'
