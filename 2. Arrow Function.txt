@@ -1,0 +1,82 @@
+====================
+2.Arrow Function
+====================
+Bsic function structure:
+---------------
+function myfun(){
+}
+---------------
+Example:
+CODE
+
+function printMyname(name){
+  console.log(name);
+}
+printMyname('MAX');
+
+---------------
+
+Arrow Function structure
+---------------
+const myfun=() =>{		
+}
+---------------
+Example:
+CODE:
+
+const printMyname = (name) =>{
+ console.log(name);
+}
+printMyname('MAX');
+
+OUTPUT:
+MAX
+
+---------------
+For Double Parameter:
+---------------
+CODE:
+
+const printMyname = (name,email) =>{
+  console.log(name,email);
+}
+printMyname('MAX','max@gmail');
+
+
+OUTPUT:
+MAX 
+max@gmail.com
+
+---------------
+For Single Parameter:
+---------------
+CODE:
+
+const printMyname = () =>{
+ console.log('MAX');
+}
+printMyname();
+
+OUTPUT:
+MAX
+
+---------------
+Return function
+---------------
+const multiplay = (number) =>{
+  return number * 2;
+}
+console.log(multiplay(2));
+
+OUTPUT:
+4
+
+---------------
+Same Return function in shortcut
+---------------
+const multiplay = number =>  number * 2;
+console.log(multiplay(2));
+
+OUTPUT:
+4
+
