@@ -1,0 +1,56 @@
+====================
+5.Spread & Rest Operators
+====================
+
+Spread & Rest Operators is actually three dots '...'
+
+
+Spread:
+Spread used to split up array elements OR object properties
+
+Syntax:
+const newArray=[...oldArray,1,2]
+const newObject ={...oldObject, newProp:5}
+
+Example 1:
+CODE:
+
+const number = [1, 2, 3];
+const newNumber = [...number, 4];
+console.log(newNumber);
+
+OUTPUT
+[1, 2, 3, 4]
+
+Example 2:
+CODE:
+
+const number = [1, 2, 3];
+const newNumber = [number, 4];
+console.log(newNumber);
+
+OUTPUT:
+[[1, 2, 3], 4]
+
+
+Rest Operators:
+Used to marge a list of function arguments into an array
+
+Syntax:
+function sortArgs(...args){
+ return args.sort()
+}
+
+Example:
+CODE:
+
+const person = {
+  name: 'Max'
+};
+const newPerson = {
+  ...person,
+  age:28
+}
+console.log(newPerson);
+
+OUTPUT:
