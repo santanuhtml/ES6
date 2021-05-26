@@ -1,0 +1,110 @@
+====================
+4.Class
+====================
+Use the keyword 'class' to create a class.
+Always add a method named constructor():
+
+Syntax:
+
+class ClassName {
+  constructor() { ... }
+}
+
+Then add any number of methods.
+
+Syntax:
+class ClassName {
+  constructor() { ... }
+  method_1() { ... }
+  method_2() { ... }
+  method_3() { ... }
+}
+
+Property are like 'variable' of the constructor()
+
+Syntax:
+class ClassName {
+  constructor() { 
+    this.myProperty = 'value';
+  }
+  method_1() { ... }
+  method_2() { ... }
+  method_3() { ... }
+}
+
+
+I.Basic Class
+CODE:
+
+class Person{
+  constructor(){
+    this.name = 'MAX'; //Property
+  }
+
+  //Method
+  printMyName(){
+    console.log(this.name);
+  }
+}
+
+//Usage
+const person = new Person();
+person.printMyName();
+
+
+II. Class Inheritance
+
+Use the "extends" keyword to inherit all methods from another class.
+Use the "super" method to call the parent's constructor function.
+
+CODE:
+
+class	Human{
+  constructor(){
+    this.gender = 'Male'; //Property
+  }
+  printGender(){
+    console.log(this.gender);
+  }
+}
+
+//use the extends keyword
+class Person extends Human{
+  constructor(){
+    super();
+    this.name = 'MAX'; //Property
+  }
+
+  //Method
+  printMyName(){
+    console.log(this.name);
+  }
+}
+
+//Usage
+const person = new Person();
+person.printMyName();
+person.printGender();
+
+
+-------------------
+Properties are like 'variables' attached to classes/object.
+Methods are like 'function' attached to classes/object.
+
+
+Note:
+Note: In ES7
+i.
+myProperty = 'value';
+
+Don't need any constructor()
+
+
+ii. method_1() { ... } will code like
+	
+    method_1 = () => {
+    }
+   
+[FOR ES7 SEE Video 16. ]
+
+
