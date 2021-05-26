@@ -1,0 +1,28 @@
+====================
+6.Destructuring
+====================
+In Spread All Arrays and All Properties distrubut in a new array or new Property.
+and in Destructuring allow pull out single element or properties and store them in
+variables.
+
+FOR ARRAY SYNTAX:
+[a,b] = ['Hello','MAX']
+console.log(a);
+console.log(a);
+
+EXAMPLE 1:
+const number = [1, 2, 3];
+[num1, num2] = number;
+console.log(num1, num2);
+console.log(num1);
+
+EXAMPLE 2:
+const number = [1, 2, 3];
+[num1, ,num3] = number;
+console.log(num1, num3);
+
+
+FOR OBJECT:
+{name} = {name:'MAX', age:28}
+console.log(name);
+console.log(age);
