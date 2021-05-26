@@ -1,0 +1,10 @@
+====================
+3.Exports & Imports (Modules)
+====================
+In Next-generation JavaScript provide writing Moduler code
+so javascript code split up over Multiple files.
+Note: Concept of Exports & Imports is called Modules.
+
+Two Images attached.
+Img-1
+Img-2
